@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_task_icon"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_marginBottom="5dip"
+        android:padding="5dp"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_task_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="3dip"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/iv_task_icon"
+        android:maxEms="12"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_task_memsize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_task_name"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="3dip"
+        android:layout_toRightOf="@id/iv_task_icon"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/sub_title"
+        android:textSize="12sp" />
+
+    <CheckBox
+        android:focusable="false"
+        android:clickable="false"
+        android:id="@+id/cb_status"
+        android:button="@drawable/checked_box_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

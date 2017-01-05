@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dong="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical" >
+    
+    
+     <com.dong.mobilesafe.ui.SettingNextItemView
+        android:id="@+id/sniv_phone_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dong:next_title ="本机信息"
+        dong:next_icon ="@drawable/about_item"/>
+     
+     
+      <com.dong.mobilesafe.ui.SettingNextItemView
+        android:id="@+id/sniv_bind_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dong:next_title ="帐号绑定"
+        dong:next_icon ="@drawable/about_item"/>
+      
+      <com.dong.mobilesafe.ui.SettingNextItemView
+        android:id="@+id/sniv_recommend_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dong:next_title ="应用推荐"
+        dong:next_icon ="@drawable/about_item"/>
+     
+
+    <com.dong.mobilesafe.ui.SettingNextItemView 
+        android:id="@+id/sniv_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dong:next_title ="设置"
+        dong:next_icon ="@drawable/item_setting_icon"/>
+    
+    
+      <com.dong.mobilesafe.ui.SettingNextItemView
+        android:id="@+id/sniv_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dong:next_title ="分享"
+        dong:next_icon ="@drawable/share_icon"/>
+    
+    
+ 	 <com.dong.mobilesafe.ui.SettingNextItemView
+        android:id="@+id/sniv_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        dong:next_title ="关于"
+        dong:next_icon ="@drawable/about_icon"/>
+    
+
+</LinearLayout>

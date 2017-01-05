@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="25dp">
+
+
+    <LinearLayout
+        android:id="@+id/ll_trafiic_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_traffic_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="8dp"
+            android:text="@string/traffic_number_per_month"
+            android:textColor="@color/primary_text_black"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/rg_traffic_number"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@+id/ll_trafiic_count"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_traffic_50"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/checked_traffic_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="50M"
+                android:textColor="@color/white"
+                android:textSize="@dimen/micro_front" />
+
+            <RadioButton
+                android:id="@+id/rb_traffic_100"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/checked_traffic_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="100M"
+                android:textColor="@color/white"
+                android:textSize="@dimen/micro_front" />
+
+            <RadioButton
+                android:id="@+id/rb_traffic_300"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/checked_traffic_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="300M"
+                android:textColor="@color/white"
+                android:textSize="@dimen/micro_front" />
+
+            <RadioButton
+                android:id="@+id/rb_traffic_500"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/checked_traffic_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="500M"
+                android:textColor="@color/white"
+                android:textSize="@dimen/micro_front" />
+
+            <RadioButton
+                android:id="@+id/rb_traffic_other"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/checked_traffic_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="其他"
+                android:textColor="@color/white"
+                android:textSize="@dimen/micro_front" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_trafiic_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_trafiic_count"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_traffic_start"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/start_date"
+            android:textColor="@color/primary_text_black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_trafiic_start"
+        android:layout_marginTop="15dp"
+        android:numColumns="7"
+        android:scrollbars="none"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="10dp"
+        android:background="@color/white"/>
+
+
+</RelativeLayout>

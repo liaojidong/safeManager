@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_home_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_divider_bg"
+    android:orientation="horizontal">
+
+
+    <com.andexert.library.RippleView
+        app:rv_centered="false"
+        android:id="@+id/rippleView"
+        app:rv_color="@color/rv_color"
+        app:rv_zoomDuration="100"
+        app:rv_rippleDuration="200"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/home_list_item_padding"
+            android:paddingTop="@dimen/home_list_item_padding">
+
+            <ImageView
+                android:id="@+id/iv_item"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="8dp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:textColor="@color/home_list_text_color"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.andexert.library.RippleView>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/top_bg">
+    
+    <TextView 
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="绘制解锁图案"
+        android:textSize="18sp"/>
+    
+    
+    <LinearLayout 
+        android:id="@+id/ll_bottom_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:padding="5dp">
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+              android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/cancel"/>
+        
+            
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+             android:textSize="14sp"
+             android:gravity="center"
+             android:textColor="@color/white"
+            android:text="重置"/>
+        
+    </LinearLayout>
+
+    <com.dong.mobilesafe.ui.LockPatternView
+        android:id="@+id/lock_pattern"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/tv_tip"
+        android:layout_above="@id/ll_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+    
+    
+    
+
+
+</RelativeLayout>

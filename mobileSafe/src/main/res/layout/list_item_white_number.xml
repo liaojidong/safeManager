@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:layout_marginLeft="10dip"
+        android:id="@+id/tv_white_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="白名单号码"
+        android:singleLine="true"
+        android:textColor="@color/primary_text_black"
+        android:textSize="@dimen/medium_front" />
+
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_white_number"
+        android:textColor="@color/gray"
+        android:layout_marginTop="5dp"
+        android:singleLine="true"
+        android:layout_marginLeft="10dip"
+        android:text="深圳"/>
+
+    
+    <ImageView 
+        android:id="@+id/iv_delete"
+        android:layout_marginRight="3dip"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:src="@drawable/delete_selector"/>
+
+</RelativeLayout>

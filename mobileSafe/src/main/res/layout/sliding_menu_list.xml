@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/sliding_menu_bg"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_setting"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/setting"/>
+
+        <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="25dp"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:text="@string/setting_center"
+            android:textSize="@dimen/medium_front"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_above="@+id/ll_setting"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lv_sliding_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/listview_base_style"
+        android:divider="@color/divider_bg"
+        android:listSelector="@color/sliding_menu_bg"
+        android:paddingLeft="@dimen/list_padding"
+        android:paddingRight="@dimen/list_padding" />
+
+</RelativeLayout>

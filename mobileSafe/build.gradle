@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.3"
+
+    dexOptions{
+        javaMaxHeapSize "2g"
+    }
+
+    defaultConfig {
+        applicationId "com.dong.mobilesafe"
+        minSdkVersion 14
+        targetSdkVersion 16
+
+        testApplicationId "com.dong.mobilesafe.test"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+        ndk {
+            abiFilters "armeabi-v7a","x86"
+        }
+    }
+
+
+    //签名配置
+    signingConfigs {
+        debug {
+            keyAlias 'android.keystore'
+            keyPassword 'liaojidong'
+            storeFile file('D:/keystore/android.keystore')
+            storePassword 'liaojidong'
+        }
+
+        release {
+            storeFile file('D:/keystore/android.keystore')
+            storePassword "liaojidong"
+            keyAlias "android.keystore"
+            keyPassword "liaojidong"
+        }
+    }
+
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            //不可调试
+            debuggable false
+            // 移除无用的resource文件
+            shrinkResources true
+            zipAlignEnabled true
+            //混淆
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            debuggable true
+        }
+    }
+}
+
+dependencies {
+    compile project(':mPChartLib')
+    compile project(':switchButton')
+    compile project(':stickyListHeaderslibrary')
+    compile files('libs/xcl-charts.jar')
+    compile files('libs/umeng-analytics-v6.0.1.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+    compile files('libs/open_sdk_r5756_lite.jar')
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile 'com.android.support:appcompat-v7:22.+'
+    compile 'com.github.traex.rippleeffect:library:1.3'
+    compile 'com.jaredrummler:android-processes:1.0.8'
+    compile 'com.github.johnpersano:supertoasts:1.3.4@aar'
+    compile 'com.github.dmytrodanylyk.circular-progress-button:library:1.1.3'
+    compile 'info.hoang8f:fbutton:1.0.5'
+    compile project(':SlidingMenu')
+    compile project(':IndicotorLib')
+    compile 'com.android.support:recyclerview-v7:22.+'
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    compile 'com.bigkoo:quicksidebar:1.0.2'
+    compile project(':contacts')
+}

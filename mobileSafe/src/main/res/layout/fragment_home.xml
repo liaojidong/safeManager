@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/fl_home_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/top_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fl_home_list_container"
+        android:background="@drawable/top_bg">
+
+
+        <com.github.lzyzsd.circleprogress.ArcProgress
+            android:id="@+id/circle_score_view"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            app:arc_bottom_text="内存"
+            app:arc_suffix_text_padding="15dp"
+            app:arc_text_color="@color/white"
+            app:arc_text_size="58sp"
+            app:arc_unfinished_color="#44FFFFFF" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_memory_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_memory_size"
+                    android:gravity="center_horizontal"
+                    android:text="可用内存 >"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#99FFFFFF" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_storage_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_storage_size"
+                    android:gravity="center_horizontal"
+                    android:text="可用存储 >"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#99FFFFFF" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_traffic_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="30MB"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_traffic_size"
+                    android:gravity="center_horizontal"
+                    android:text="可用流量 >"
+                    android:textColor="#99FFFFFF"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.dong.mobilesafe.ui.DynamicWave
+            android:id="@+id/dynamicWave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:wave_amplitude="3dp"
+            app:wave_percent="0.2"
+            app:wave_speed="3dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_sliding_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/menu_close" />
+
+</RelativeLayout>

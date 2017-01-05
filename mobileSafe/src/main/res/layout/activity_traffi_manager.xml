@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+
+
+    <view
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        class="com.dong.mobilesafe.ui.CustomViewPager" />
+   <View 
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#20000000"/>
+
+    <RadioGroup
+        android:id="@+id/rg_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:paddingTop="5dp"
+        android:gravity="center_vertical"
+        android:background="@color/primary_blue"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_traffic_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:button="@null"
+
+            android:drawableTop="@drawable/traffic_rank_icon"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/traffic_statistics"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+        
+        <RadioButton
+            android:id="@+id/rb_traffic_ranking"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+        	android:ellipsize="marquee"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/traffic_statistic"
+            android:text="@string/traffic_rank"/>
+
+
+        <RadioButton
+            android:id="@+id/rb_traffic_speed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+        	android:ellipsize="marquee"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:drawableTop="@drawable/traffic_velocity_measures"
+            android:text="@string/app_fire_wall"/>
+        
+    </RadioGroup>
+
+</LinearLayout>

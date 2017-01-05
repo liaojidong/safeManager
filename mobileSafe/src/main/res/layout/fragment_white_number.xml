@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btn_add_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/add_white_number"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:buttonColor="@color/fbutton_color_turquoise"
+        app:cornerRadius="6dp"
+        app:shadowColor="@color/fbutton_color_green_sea"
+        app:shadowEnabled="true"
+        app:shadowHeight="2dp" />
+
+    <ListView
+        android:id="@+id/lv_white_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_add_number"
+        android:overScrollMode="never"></ListView>
+
+
+</RelativeLayout>

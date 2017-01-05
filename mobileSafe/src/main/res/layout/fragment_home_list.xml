@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+        <GridView
+	        android:id="@+id/list_home"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:numColumns="2"
+	        android:cacheColorHint="@color/color_transparent"
+	        android:fastScrollEnabled="false"
+	        android:scrollbars="none"
+	        android:overScrollMode="never"
+	        android:fadingEdge="none"
+	        android:fadeScrollbars="false"
+	        android:gravity="center"
+	        android:listSelector="@color/color_transparent"
+	        android:stretchMode="columnWidth"
+	        android:horizontalSpacing="0dp"
+	        android:verticalSpacing="0dp" />
+
+</RelativeLayout>

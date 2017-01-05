@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_bg">#F6F6F8</color>
+    <color name="color_green">#009900</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_home_item_selected_bg">#10000000</color>
+    <color name="color_home_bottom_item_pressed">#20000000</color>
+    <color name="color_traffic_bar_bg">#66CC33</color>
+    <color name="btn_green_normal_bg">#66CC33</color>
+    <color name="btn_green_pressed_bg">#339900</color>
+    <color name="bottom_bar_bg">#3C4042</color>
+    <color name="color_divider_bg">#20000000</color>
+    <color name="color_dialog_title_divider_bg">#80000000</color>
+    <color name="color_title_bg">#0196EB</color>
+    <color name="color_txt">#808080</color>
+    <color name="color_translucence">#10000000</color>
+    <color name="color_gary">#EEEEEE</color>
+    <color name="color_dark_gray">#888888</color>
+    <color name="gray_bg">#EFEEF4</color>
+    <color name="gesture_lock_bg">#013E52</color>
+    <color name="gray">#FF888888</color>
+    <color name="tab_line_bg">#0196EB</color>
+    
+    <color name="card_shadow">#D4D4D4</color>
+    <color name="black_overlay">#60000000</color>
+    <color name="white_overlay">#40FFFFFF</color>
+    <color name="primary">#EF5350</color>
+    <color name="secondary">#B71C1C</color>
+    <color name="overlay_light">#F8F8F8</color>
+    <!-- 状态栏的颜色-->
+    <color name="status_bar">#0196EB</color>
+    <!-- 透明色-->
+    <color name="transparent">#00000000</color>
+    <color name="translucence">#33000000</color>
+    <!-- 水波纹颜色-->
+    <color name="rv_color">#0196EB</color>
+    <color name="sliding_menu_bg">#1E374B</color>
+    <color name="divider_bg">#1AFFFFFF</color>
+    <color name="primary_blue">#0196EB</color>
+    <color name="primary_selected_blue">#0684CC</color>
+    <color name="primary_text_black">#BB000000</color>
+    <color name="sub_title">#99000000</color>
+
+    <color name="text_transparent_white">#7fffffff</color>
+    <color name="default_text_hint_color">#646464</color>
+
+
+    <color name="fbutton_color_turquoise">#1abc9c</color>
+    <color name="fbutton_color_green_sea">#16a085</color>
+    <color name="fbutton_color_emerald">#2ecc71</color>
+    <color name="fbutton_color_nephritis">#27ae60</color>
+
+</resources>

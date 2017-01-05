@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:id="@+id/rl_top_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_blue"
+        android:visibility="gone"
+        android:padding="5dp">
+        
+        <TextView 
+            android:id="@+id/tv_wifi"
+            android:layout_alignParentRight="true"
+            android:layout_width="65dp"
+            android:gravity="center"
+            android:textSize="14sp"
+			android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="wifi"/>
+        
+          <TextView 
+            android:layout_width="65dp"
+            android:layout_toLeftOf="@id/tv_wifi"
+            android:gravity="center"
+            android:textSize="14sp"
+			android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="移动"/>
+        
+        
+    </RelativeLayout>
+	<ListView 
+	    android:layout_below="@id/rl_top_tip"
+	    android:id="@+id/lv_listview"
+	    android:layout_width="match_parent"
+	    android:overScrollMode="never"
+	    android:layout_height="match_parent"/>
+    
+
+</RelativeLayout>

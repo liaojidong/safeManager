@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+<LinearLayout 
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_height="wrap_content" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="添加黑名单"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:background="@color/color_divider_bg"
+        android:layout_height="1dp"/>
+    
+       <TextView 
+        android:id="@+id/tv_add_from_call_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="从通话记录添加"/>
+        
+   <View 
+        android:layout_width="match_parent"
+        android:background="@color/color_divider_bg"
+        android:layout_height="1dp"/>
+            
+     <TextView 
+         android:id="@+id/tv_add_from_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="从短信列表添加"/>
+              
+    <View 
+        android:layout_width="match_parent"
+        android:background="@color/color_divider_bg"
+        android:layout_height="1dp"/>
+                          
+    <TextView 
+        android:id="@+id/tv_add_from_call_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="从通讯录列表添加"/>
+    
+     <View 
+        android:layout_width="match_parent"
+        android:background="@color/color_divider_bg"
+        android:layout_height="1dp"/>
+     
+      <TextView 
+          android:id="@+id/tv_add_by_manual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:gravity="left"
+        android:padding="8dp"
+        android:text="手动添加"/>
+         
+      <View 
+        android:layout_width="match_parent"
+        android:background="@color/color_divider_bg"
+        android:layout_height="1dp"/>
+      
+      <Button 
+          android:id="@+id/btn_cancel"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:text="取消"
+          android:layout_gravity="bottom"
+          android:padding="8dp"
+          android:textSize="16sp"/>
+    
+    
+
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/top_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.dong.mobilesafe.ui.CircleScoreView
+                android:id="@+id/circle_score_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                app:circleColor="@color/color_green"
+                app:circleRadius="60dp"
+                app:descTextSize="12sp"
+                app:description="本月已用"
+                app:fullScore="100"
+                app:scoreTextColor="@color/color_green"
+                app:scoreTextSize="26sp"
+                app:scores="0"
+                app:thickness="5dp"
+                app:unit="M" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/rl_traffic_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_traffic_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="套餐总共：100M"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_traffic_today_consume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_traffic_count"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp" />
+
+                    <info.hoang8f.widget.FButton
+                        android:id="@+id/btn_correction_traffic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_below="@id/tv_traffic_today_consume"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/common_button_bg"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="校正流量"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        app:buttonColor="@color/fbutton_color_turquoise"
+                        app:shadowColor="@color/fbutton_color_green_sea"
+                        app:shadowEnabled="true"
+                        app:shadowHeight="2dp"
+                        app:cornerRadius="2dp" />
+
+                </RelativeLayout>
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/btn_set_traffic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:layout_gravity="center"
+                    android:text="设置套餐"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/micro_front"
+                    app:buttonColor="@color/fbutton_color_turquoise"
+                    app:shadowColor="@color/fbutton_color_green_sea"
+                    app:shadowEnabled="true"
+                    app:shadowHeight="2dp"
+                    app:cornerRadius="2dp"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-12dp"
+            android:layout_marginRight="-12dp"
+            android:layout_marginTop="-9dp"
+            android:layout_weight="4"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

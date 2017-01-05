@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <ImageView 
+        android:id="@+id/iv_app_icon"
+        android:layout_alignParentLeft="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:padding="5dp"/>
+    
+	<TextView 
+	    android:layout_toRightOf="@id/iv_app_icon"
+	    android:layout_height="wrap_content" 
+	    android:id="@+id/tv_app_name" 
+	    android:layout_centerVertical="true"
+	    android:padding="5dp"
+	    android:layout_marginLeft="5dp"
+	    android:textSize="16sp"
+		android:singleLine="true"
+		android:maxEms="10"
+	    android:textColor="@android:color/black"
+	    android:layout_width="wrap_content"/>
+
+	
+	<com.kyleduo.switchbutton.SwitchButton
+	    android:layout_centerVertical="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+ 		android:layout_marginRight="10dp"
+	    android:id="@+id/itemcheck_wifi"/>
+	
+	
+	
+	<com.kyleduo.switchbutton.SwitchButton
+	    android:layout_toLeftOf="@id/itemcheck_wifi"
+	    android:layout_centerVertical="true"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="10dp"
+	    android:id="@+id/itemcheck_3g"/>
+
+</RelativeLayout>

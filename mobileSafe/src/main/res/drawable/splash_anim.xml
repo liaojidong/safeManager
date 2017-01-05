@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:duration="100" android:drawable="@drawable/loading2_00000" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00001" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00002" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00003" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00004" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00005" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00006" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00007" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00008" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00009" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00011" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00012" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00013" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00014" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00016" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00017" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00018" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00019" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00020" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00021" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00022" />
+	<item android:duration="100" android:drawable="@drawable/loading2_00023" />
+</animation-list> 

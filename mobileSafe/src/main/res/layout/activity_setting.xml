@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.dong.mobilesafe.ui.SettingItemView
+        android:id="@+id/siv_update"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:item_title="自动更新版本" />
+
+    <com.dong.mobilesafe.ui.SettingItemView
+        android:id="@+id/siv_show_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:item_title="显示号码归属地" />
+
+    <com.dong.mobilesafe.ui.SettingNextItemView 
+        android:id="@+id/sniv_changebg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:next_title = "拦截模式"
+        app:next_hint = "半透明" />
+
+    <com.dong.mobilesafe.ui.SettingItemView
+        android:id="@+id/siv_callsms_safe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:item_title="黑名单拦截" />
+
+    <com.dong.mobilesafe.ui.SettingItemView
+        android:id="@+id/siv_watchdog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:item_title="程序锁" />
+
+     <com.dong.mobilesafe.ui.SettingItemView
+         android:layout_marginTop="25dp"
+        android:id="@+id/siv_float_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         app:item_title="悬浮窗" />
+
+     <com.dong.mobilesafe.ui.SettingItemView
+        android:id="@+id/siv_traffic_monitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         app:item_title="流量监控" />
+
+
+
+    <com.dong.mobilesafe.ui.SettingItemView
+        android:layout_marginTop="25dp"
+        android:id="@+id/cb_auto_clean"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:item_title="锁屏清理进程" />
+
+</LinearLayout>

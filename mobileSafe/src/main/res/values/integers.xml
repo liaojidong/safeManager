@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="animation_default_duration">300</integer>
+    <integer-array name="share_icons">
+        <item>@drawable/ng_kazuo_icon_tuijian_wx2</item>
+        <item>@drawable/ng_kazuo_icon_tuijian_wx1</item>
+        <item>@drawable/ng_kazuo_icon_tuijian_qq2</item>
+        <item>@drawable/ng_kazuo_icon_tuijian_qq1</item>
+        <item>@drawable/ng_kazuo_icon_tuijian_wb</item>
+    </integer-array>
+</resources>

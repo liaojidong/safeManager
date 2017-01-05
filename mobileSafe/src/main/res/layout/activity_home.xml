@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <fragment
+        android:name="com.dong.mobilesafe.fragment.HomeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="@string/tag_home_fragment" />
+</RelativeLayout>

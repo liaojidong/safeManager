@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_names">
+        <item >手机防盗</item>
+        <item >通讯卫士</item>
+        <item >进程管理</item>
+        <item >流量统计</item>
+        <item >应用锁</item>
+        <item >缓存清理</item>
+    </string-array>
+    
+    <string-array name="dialog_title">
+        <item>从通话记录添加</item>
+        <item>从短信列表添加</item>
+        <item>从联系人列表添加</item>
+        <item>手动添加</item>
+    </string-array>
+    
+    
+    <string-array name="intercept_pattern">
+        <item>智能拦截</item>
+        <item>只拦截黑名单</item>
+        <item>只接收白名单</item>
+        <item>只拦截陌生人号码</item>
+    </string-array>
+    
+    
+    <string-array name="app_section">
+        <item >用户进程</item>
+        <item >系统进程</item>
+    </string-array>
+    
+    
+    <string-array name="app_type">
+        <item >用户应用</item>
+        <item >系统应用</item>
+    </string-array>
+    
+   <string-array name="advanced_tools">
+        <item >程序锁</item>
+        <item >手机备份</item>
+        <item >卸载管理</item>
+        <item >安装包管理</item>
+        <item >系统检测</item>
+        <item >连接电脑</item>
+    </string-array>
+
+    <string-array name="sliding_menu_items">
+        <item>小白助手</item>
+        <item>设备信息</item>
+        <item>分享</item>
+        <item>给个好评</item>
+        <item>打赏</item>
+        <item>关于</item>
+    </string-array>
+
+    <array name="device_info_grounds">
+        <item>基本信息</item>
+        <item>CPU信息</item>
+        <item>屏幕信息</item>
+        <item>网络信息</item>
+    </array>
+    
+    <array name="share_platforms">
+        <item>微信朋友圈</item>
+        <item>微信好友</item>
+        <item>QQ空间</item>
+        <item>QQ好友</item>
+        <item>新浪微博</item>
+    </array>
+    
+    
+</resources>

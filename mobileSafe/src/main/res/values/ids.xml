@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="ID_FOOTER_LAYOUT"/>
+    <item type="id" name="ID_TITLE_BAR"/>
+    <item type="id" name="ID_VIEWPAGER"/>
+    <item type="id" name="ID_DRIVER_LINE"/>
+    <item type="id" name="ID_RG_NAV_CONTENT"/>
+    <item type="id" name="ID_TAB_LAYOUT"/>
+    <item type="id" name="ID_TAB_LINE"/>
+</resources>

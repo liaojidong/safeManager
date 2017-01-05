@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="@color/primary_blue"
+        android:layout_height="300dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/sim_lock" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btn_next_step"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center"
+            android:text="@string/next_step"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_front"
+            app:buttonColor="@color/fbutton_default_color"
+            app:shadowColor="@color/fbutton_default_shadow_color"
+            app:shadowEnabled="true"
+            app:shadowHeight="2dp"
+            app:cornerRadius="5dp"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

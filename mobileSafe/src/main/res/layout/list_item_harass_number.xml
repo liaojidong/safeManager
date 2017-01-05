@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView 
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="13798984918"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:padding="2dp"
+        android:layout_alignParentLeft="true"/>
+    
+    <TextView 
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北京"
+        android:textSize="12sp"
+        android:textColor="@color/color_txt"
+        android:padding="2dp"
+        android:layout_below="@id/tv_number"/>
+    
+    
+    <TextView 
+        android:id="@+id/tv_receiver_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="124"
+        android:textColor="@color/color_txt"
+        android:padding="5dp"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

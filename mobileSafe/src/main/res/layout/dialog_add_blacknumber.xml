@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/et_blacknumber"
+        style="@style/edittext_base_style"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="请输入黑名单号码"
+        android:inputType="phone"
+        android:padding="5dp" />
+
+
+    <EditText
+        android:id="@+id/et_blackname"
+        style="@style/edittext_base_style"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/et_blacknumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:hint="请输入名字"
+        android:inputType="text"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_blackname"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_phone"
+            android:layout_width="140dip"
+            android:button="@drawable/checked_box_bg"
+            android:layout_height="wrap_content"
+            android:text="电话拦截"
+            android:textColor="@color/primary_text_black" />
+
+        <CheckBox
+            android:id="@+id/cb_sms"
+            android:layout_width="140dip"
+            android:button="@drawable/checked_box_bg"
+            android:layout_height="wrap_content"
+            android:text="短信拦截"
+            android:textColor="@color/primary_text_black" />/>
+    </LinearLayout>
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/ll_check"
+        android:text="@string/sure"
+        android:textColor="@color/white"
+        app:buttonColor="@color/fbutton_color_turquoise"
+        app:cornerRadius="6dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        app:shadowColor="@color/fbutton_color_green_sea"
+        app:shadowEnabled="true"
+        app:shadowHeight="2dp" />
+
+
+</RelativeLayout>

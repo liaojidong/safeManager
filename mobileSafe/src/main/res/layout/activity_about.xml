@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_icon"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/top_bg">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/menu_open"/>
+
+        <TextView
+            android:id="@+id/tv_appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:textSize="@dimen/medium_front"
+            android:textColor="@color/white"
+            android:text="@string/app_name"
+            />
+
+        <TextView
+            android:id="@+id/tv_ico_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_appName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="v1.0"
+            android:textColor="@color/text_transparent_white"
+            android:textSize="@dimen/micro_front"/>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:layout_below="@id/layout_icon"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="@dimen/micro_front"
+        android:padding="3dp"
+        android:text="@string/contact_information"/>
+
+    <TextView
+        android:id="@+id/snt_update_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_contact"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:gravity="center"
+        android:autoLink="email"
+        android:textColor="@color/sub_title"
+        android:textSize="@dimen/small_front"
+        android:text="邮箱: 850008128@qq.com"/>
+
+    <TextView
+        android:id="@+id/snt_app_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/snt_update_version"
+        android:gravity="center"
+        android:layout_marginTop="1px"
+        android:padding="5dp"
+        android:autoLink="phone"
+        android:textColor="@color/sub_title"
+        android:text="tel: 13798984918"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_user_deal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_copyright"
+        android:layout_centerHorizontal="true"
+        android:text="@string/user_deal"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/micro_front"/>
+
+    <TextView
+        android:id="@+id/tv_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_copyright_s"
+        android:layout_centerHorizontal="true"
+        android:text="@string/xiaobai_copyright"
+        android:layout_marginBottom="3dp"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/micro_front"/>
+
+    <TextView
+        android:id="@+id/tv_copyright_s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="@string/copyright"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/micro_front"/>
+
+</RelativeLayout>

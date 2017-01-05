@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp" >
+
+    <ImageView
+        android:id="@+id/iv_app_icon"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:layout_marginBottom="5dip"
+        android:layout_margin="5dip"
+        android:padding="5dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="3dip"
+        android:layout_toRightOf="@id/iv_app_icon"
+        android:layout_centerVertical="true"
+        android:maxEms="8"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+
+       <TextView
+        android:id="@+id/tv_traffic_rx_count"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:text="下载"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+    
+    
+      <TextView
+        android:id="@+id/tv_traffic_mobile_count"
+        android:layout_width="50dp"
+        android:layout_toLeftOf="@id/tv_traffic_rx_count"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="上传"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+      
+     
+</RelativeLayout>

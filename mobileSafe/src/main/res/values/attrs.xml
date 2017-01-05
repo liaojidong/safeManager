@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SettingView">
+        <attr name="item_title" format="string" />
+    </declare-styleable>
+    
+    
+    <declare-styleable name="SettingNextView">
+        <attr name="next_title" format="string" />
+        <attr name="next_icon" format="reference"/>
+        <attr name="next_hint" format="string" />
+    </declare-styleable>
+    
+    
+    <declare-styleable name="CircleScoreView">
+        <attr name="circleThickness" format="dimension" />
+        <attr name="scores" format="integer" />
+        <attr name="fullScore" format="integer" />
+        <attr name="circleRadius" format="dimension"/>
+        <attr name="circleColor" format="color"/>
+        <attr name="scoreTextSize" format="dimension" />
+        <attr name="scoreTextColor" format="color"/>
+        <attr name="description" format="string|reference"/>
+        <attr name="descTextSize" format="dimension"/>
+        <attr name="unit" format="string"></attr>
+    </declare-styleable>
+    
+    
+      <declare-styleable name="CircleProgress">
+        <attr name="circle_progress" format="integer"/>
+        <attr name="circle_max" format="integer"/>
+
+        <attr name="circle_unfinished_color" format="color"/>
+        <attr name="circle_finished_color" format="color"/>
+
+        <attr name="circle_text_size" format="dimension"/>
+        <attr name="circle_text_color" format="color"/>
+
+        <attr name="circle_prefix_text" format="string"/>
+        <attr name="circle_suffix_text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="DonutProgress">
+        <attr name="donut_progress" format="integer"/>
+        <attr name="donut_max" format="integer"/>
+
+        <attr name="donut_unfinished_color" format="color"/>
+        <attr name="donut_finished_color" format="color"/>
+
+        <attr name="donut_finished_stroke_width" format="dimension"/>
+        <attr name="donut_unfinished_stroke_width" format="dimension"/>
+
+        <attr name="donut_text_size" format="dimension"/>
+        <attr name="donut_text_color" format="color"/>
+
+        <attr name="donut_prefix_text" format="string"/>
+        <attr name="donut_suffix_text" format="string"/>
+
+        <attr name="donut_background_color" format="color"/>
+
+        <attr name="donut_inner_bottom_text" format="string"/>
+        <attr name="donut_inner_bottom_text_size" format="dimension"/>
+        <attr name="donut_inner_bottom_text_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="ArcProgress">
+        <attr name="arc_progress" format="integer"/>
+        <attr name="arc_angle" format="float"/>
+        <attr name="arc_stroke_width" format="dimension"/>
+        <attr name="arc_max" format="integer"/>
+
+        <attr name="arc_unfinished_color" format="color"/>
+        <attr name="arc_finished_color" format="color"/>
+
+        <attr name="arc_text_size" format="dimension"/>
+        <attr name="arc_text_color" format="color"/>
+
+        <attr name="arc_suffix_text" format="string"/>
+        <attr name="arc_suffix_text_size" format="dimension"/>
+        <attr name="arc_suffix_text_padding" format="dimension"/>
+
+        <attr name="arc_bottom_text" format="string"/>
+        <attr name="arc_bottom_text_size" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="circleProgressStyle" format="reference"/>
+        <attr name="donutProgressStyle" format="reference"/>
+        <attr name="arcProgressStyle" format="reference"/>
+    </declare-styleable>
+    
+    <declare-styleable name="LockPatternView">
+        <!-- Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height" -->
+     <attr name="aspect" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="DynamicWave">
+        <attr name="wave_percent" format="float"/>
+        <attr name="wave_speed" format="dimension"/>
+        <attr name="wave_amplitude" format="dimension"/>
+    </declare-styleable>
+
+</resources>

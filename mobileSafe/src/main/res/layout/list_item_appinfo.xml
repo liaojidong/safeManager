@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip" >
+
+    <ImageView
+        android:id="@+id/iv_app_icon"
+        android:src="@drawable/ic_launcher"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+		android:padding="5dp"/>
+
+    <TextView 
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="3dip"
+        android:layout_toRightOf="@id/iv_app_icon"
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:singleLine="true"
+        android:maxEms="20"
+        android:textSize="14sp"
+        android:padding="5dp"/>
+    
+    <TextView 
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@id/iv_app_icon"
+        android:layout_below="@id/tv_app_name"
+        android:id="@+id/tv_app_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/sub_title"
+        android:textSize="@dimen/micro_front"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"/>
+    
+    <ImageView 
+        android:id="@+id/iv_status"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/unlock"
+      />
+</RelativeLayout>

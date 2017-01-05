@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/ll_top" 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#99000000"
+        android:layout_height="96dp">
+        
+        <TextView 
+            android:id="@+id/tv_RQ_code"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/QR_code"/>
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"/>
+        
+          <TextView 
+              android:id="@+id/tv_num_location"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/number_location"/>
+        
+        
+    </LinearLayout>
+
+    
+    <GridView 
+        android:id="@+id/gv_advance_tools"
+        android:layout_below="@id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+       	android:stretchMode="columnWidth"
+	    android:horizontalSpacing="0dp"
+	    android:fadingEdge="none"
+	    android:fadeScrollbars="false"
+	    android:gravity="center"
+	    android:verticalSpacing="0dp" 
+        android:numColumns="3"/>
+    
+</RelativeLayout>

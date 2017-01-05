@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/top_bg">
+    
+    
+    <ImageView 
+        android:id="@+id/iv_lock_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginTop="30dp"/>
+    
+
+    <TextView
+        android:id="@+id/tv_lock_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_below="@id/iv_lock_logo"
+        android:text="@string/input_gesture_tip"/>
+
+    <com.dong.mobilesafe.ui.LockPatternView
+        android:id="@+id/lock_pattern"
+        android:layout_below="@id/tv_lock_tip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

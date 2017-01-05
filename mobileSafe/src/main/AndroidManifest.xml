@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dong.mobilesafe"
+    android:versionCode="5"
+    android:versionName="1.1.1">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- 权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.WRITE_PROFILE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />　
+    <uses-permission android:name="telecom.mdesk.permission.FORCE_CLOSE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SET_ALWAYS_FINISH" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+
+    <application
+        android:name=".application.SecurityApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.dong.mobilesafe.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/splash_style">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.dong.mobilesafe.HomeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="com.itheima.xxxx" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.dong.mobilesafe.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.LostFindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.SetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.SelectContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.AtoolsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.NumberAddressQueryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.CommunicationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.TaskManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.EnterPwdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:process=":GuardService"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.TrafficManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.AntiVirusActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.CleanCacheActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.TrafficSetupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.CallLogActvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.FromSMSActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.PhoneInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.CommunicationSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.TrafficSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.ManualAddActivity"
+            android:windowSoftInputMode="stateVisible"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.AppManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.DeviceInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.LockSetupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name="com.dong.mobilesafe.PackageManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dong.mobilesafe.MobilephoneLockActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name="com.dong.mobilesafe.AppLockEnterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+        <activity
+            android:name="com.dong.mobilesafe.AppLockActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:process=":GuardService"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
+
+        <!-- 服务 -->
+        <service
+            android:name="com.dong.mobilesafe.service.GPSService"
+            android:process=":GuardService" />
+        <service
+            android:name="com.dong.mobilesafe.service.CallSmsSafeService"
+            android:process=":GuardService" />
+        <service
+            android:name="com.dong.mobilesafe.service.AutoCleanService"
+            android:process=":GuardService" />
+        <service
+            android:name="com.dong.mobilesafe.service.UpdateWidgetService"
+            android:process=":GuardService" />
+        <service
+            android:name="com.dong.mobilesafe.service.AppLockService"
+            android:process=":GuardService" />
+        <service android:name="com.dong.mobilesafe.service.AppLockService$GrayInnerService"
+            android:process=":GuardService"/>
+        <service
+            android:name="com.dong.mobilesafe.service.TrafficMonitorService"
+            android:process=":GuardService" />
+        <service
+            android:name="com.dong.mobilesafe.service.AddressService"
+            android:process=":GuardService" />
+        <service
+            android:name="com.dong.mobilesafe.service.FloatWindowService"
+            android:process=":GuardService" />
+
+        <!-- 广播接收者 -->
+        <receiver
+            android:name=".receiver.XiaoBaiReceiver"
+            android:exported="false"
+            android:process=":GuardService">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+
+        </receiver>
+
+        <receiver android:name="com.dong.mobilesafe.receiver.SMSReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.dong.mobilesafe.receiver.MyWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/process_widget_provider" />
+        </receiver>
+
+        <receiver
+            android:name="com.dong.mobilesafe.receiver.KillAllRecevier"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.itheima.mobilesafe.killall" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.dong.mobilesafe.receiver.ShutdownReceiver"
+            android:exported="false"
+            android:process=":GuardService">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+
+        </receiver>
+
+        <!-- 友盟集成 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5772a6eb67e58edd40001f33"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="yingyongbao" />
+
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- QQ空间分享回调 -->
+        <activity
+            android:name="com.dong.mobilesafe.share.qq.QzoneRespond"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent222222" />
+            </intent-filter>
+        </activity>
+
+        <!-- 腾讯开放平台 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="1105500410" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <!-- 新浪微博 Web注册授权页面 -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"></activity>
+
+        <!-- 新浪微博分享回调 -->
+        <activity
+            android:name="com.dong.mobilesafe.share.sinaweibo.SinaWeiboRespond"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

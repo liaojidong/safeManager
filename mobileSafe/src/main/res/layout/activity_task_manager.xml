@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+
+      <LinearLayout
+        android:id="@+id/ll_task_bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+        <Button
+			android:id="@+id/btn_kill_all"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/common_button_bg"
+            android:text="@string/kill_all" />
+        
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:layout_above="@id/ll_task_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+            android:id="@+id/lv_task_manager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+			style="@style/listview_base_style" />
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>
