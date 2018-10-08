@@ -1,8 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 27
+    buildToolsVersion "26.0.2"
+    useLibrary 'org.apache.http.legacy'
 
     dexOptions{
         javaMaxHeapSize "2g"
@@ -10,25 +11,29 @@ android {
 
     defaultConfig {
         applicationId "com.dong.mobilesafe"
-        minSdkVersion 14
-        targetSdkVersion 16
+        minSdkVersion 21
+        targetSdkVersion 27
 
         testApplicationId "com.dong.mobilesafe.test"
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
         ndk {
-            abiFilters "armeabi-v7a","x86"
+            abiFilters "armeabi-v7a"
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath = true }
         }
     }
 
 
     //签名配置
     signingConfigs {
-        debug {
-            keyAlias 'android.keystore'
-            keyPassword 'liaojidong'
-            storeFile file('D:/keystore/android.keystore')
-            storePassword 'liaojidong'
-        }
+//        debug {
+//            keyAlias 'android.keystore'
+//            keyPassword 'liaojidong'
+//            storeFile file('D:/keystore/android.keystore')
+//            storePassword 'liaojidong'
+//        }
 
         release {
             storeFile file('D:/keystore/android.keystore')
@@ -52,11 +57,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
-        debug {
-            signingConfig signingConfigs.debug
-            minifyEnabled false
-            debuggable true
-        }
+//        debug {
+//            signingConfig signingConfigs.debug
+//            minifyEnabled false
+//            debuggable true
+//        }
     }
 }
 
@@ -80,6 +85,7 @@ dependencies {
     compile project(':SlidingMenu')
     compile project(':IndicotorLib')
     compile 'com.android.support:recyclerview-v7:22.+'
+    compile 'com.code-troopers.betterpickers:library:3.1.0'
     compile 'com.baoyz.swipemenulistview:library:1.3.0'
     compile 'com.bigkoo:quicksidebar:1.0.2'
     compile project(':contacts')
